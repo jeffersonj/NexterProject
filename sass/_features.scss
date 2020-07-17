@@ -1,5 +1,31 @@
 .features{
-    background-color: $color-grey-light-2;
-
     grid-column: center-start / center-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);  //implicit grid
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));  //will be created which columns as possible to fill all content, creating new lines if necessary
+    grid-template-rows: auto auto;
+    grid-gap: 6rem;
+    align-items: start; //aligning the text on the top of grid-items
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    row-gap: 1.5rem;
+    column-gap: 2.5rem;
+
+    &__icon{
+        fill: $color_primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;   //will be expanded from top to bottom of this implicit grid-row (1 / -1 only works with explicit grid)
+        transform: translateY(-1rem);
+    }
+
+    &__text{
+        font-size: 1.7rem;
+    }
 }
