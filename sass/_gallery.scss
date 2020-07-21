@@ -21,51 +21,51 @@
         }
         &--3{
             grid-row: 1 / span 2;
-            grid-column: 6 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 6 / 7;    //initilize on grid-cell 6 and expands 1 grid-cell until 7th grid-cell
         }
         &--4{
             grid-row: 1 / span 2;
-            grid-column: 7 / span 2;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 7 / span 2;    //initilize on grid-cell 7 and expands 2 grid-cells
         }
         &--5{
             grid-row: 3 / span 3;
-            grid-column: 1 / span 2;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 1 / span 2;
         }
         &--6{
             grid-row: 4 / span 2;
-            grid-column: 3 / span 2;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 3 / span 2;
         }
         &--7{
             grid-row: 4 / span 1;
-            grid-column: 5 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 5 / span 1;
         }
         &--8{
             grid-row: 3 / span 2;
-            grid-column: 6 / span 2;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 6 / span 2;
         }
         &--9{
             grid-row: 3 / span 3;
-            grid-column: 8 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 8 / -1;    //initilize on grid-cell 8 and expands until the end of the grid
         }
         &--10{
             grid-row: 6 / span 2;
-            grid-column: 1 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 1 / span 1;
         }
         &--11{
             grid-row: 6 / span 2;
-            grid-column: 2 / span 2;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 2 / span 2;
         }
         &--12{
             grid-row: 6 / span 2;
-            grid-column: 4 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 4 / span 1;
         }
         &--13{
             grid-row: 5 / span 3;
-            grid-column: 5 / span 3;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 5 / span 3;
         }
         &--14{
             grid-row: 6 / span 2;
-            grid-column: 8 / span 1;    //initilize on grid-cell 3 and expands 3 grid-cells
+            grid-column: 8 / span 1;
         }
     }
 
