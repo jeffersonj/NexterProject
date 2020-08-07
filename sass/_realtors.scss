@@ -25,6 +25,11 @@
         @media only screen and (max-width: $bp-medium){
             grid-template-columns: repeat(3, min-content max-content);
         }
+
+        //seeting back grid-template-columns to the original
+        @media only screen and (max-width: $bp-small){
+            grid-template-columns: min-content /*to fit to the content*/ max-content /*for do not break lines*/;
+        }
     }
     
     &__img{
