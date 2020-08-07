@@ -9,10 +9,14 @@
     padding-top: 4rem;
 
     display: grid;
-    grid-template-rows: 1fr min-content 1fr 6rem 1fr;    //height of the each row
-    grid-template-columns: max-content;     //fitted to the max content of the container
+    grid-template-rows: 1fr min-content 1fr minmax(6rem, min-content) 1fr;    //height of the each row
+    grid-template-columns: minmax(min-content, max-content);     //never be more narrow of the content and fitted to the max content of the container
     grid-row-gap: 1.5rem;
     justify-content: center;    //aligning all content to the center of the container
+
+    @media only screen and (max-width: $bp-medium){
+        grid-column: full-start / full-end;
+    }
 
     &__logo{
         height: 3rem;
@@ -47,9 +51,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 3rem;
+        align-items: center;
 
         img{
             height: 2.5rem;
+            max-width: 100%;
             align-self: center;
             justify-self: center;
             filter: brightness(70%);

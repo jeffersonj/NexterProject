@@ -3,10 +3,16 @@
     grid-column: col-start 7 / full-end;
     
     display: grid;
+    padding: 3rem;
     align-content: center;
     justify-content: center;
     grid-row-gap: 2rem;
     justify-items: center;
+
+    //spanning 100% of viewport
+    @media only screen and (max-width: $bp-medium){
+        grid-column: full-start / full-end;
+    }
     
     &__list{
         display: grid;
@@ -14,6 +20,11 @@
         grid-column-gap: 1.5em;
         grid-row-gap: 5vh;
         align-items: center;
+
+        //positioning realtors text and photo side-by-side
+        @media only screen and (max-width: $bp-medium){
+            grid-template-columns: repeat(3, min-content max-content);
+        }
     }
     
     &__img{

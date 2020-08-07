@@ -9,6 +9,11 @@
         align-items: center;
         //covering the bg-imge with a linear-gradient and .5 of opacity
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+
+        //spanning 100% of viewport
+        @media only screen and (max-width: $bp-medium){
+            grid-column: full-start / full-end;
+        }
     }
 
     &__img--1{
@@ -43,6 +48,12 @@
         align-content: center;
         justify-items: start;
         */
+
+        //spanning 100% of viewport
+        @media only screen and (max-width: $bp-medium){
+            grid-column: full-start / full-end;
+            grid-row: 5 / 6;
+        }
     }
 
     &__text{
